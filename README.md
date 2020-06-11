@@ -1,6 +1,6 @@
 # Little
 
-Min is a fast, minimal browser that protects your privacy. It includes an interface designed to minimize distractions, and features such as:
+Little is a fast, minimal browser that protects your privacy. It includes an interface designed to minimize distractions, and features such as:
 
 * Information from [DuckDuckGo](https://duckduckgo.com) in the search bar.
 * Full-text search for visited pages
@@ -18,18 +18,9 @@ Min is a fast, minimal browser that protects your privacy. It includes an interf
 
 <img alt="Reader View" src="https://user-images.githubusercontent.com/10314059/53312382-67ca7d80-387a-11e9-9ccc-88ac592c9b1c.png" width="700"/>
 
-## Installing
-
-You can find prebuilt binaries for Min [here](https://github.com/minbrowser/min/releases). Alternatively, skip to the section below for instructions on how to build Min directly from source.
-
-### Installation on Linux
-
-* To install the .deb file, use `sudo dpkg -i /path/to/download`
-* To install the RPM build, use `sudo rpm -i /path/to/download --ignoreos`
-
 ## Developing
 
-If you want to develop Min:
+If you want to develop Little:
 
 * Install [Node](https://nodejs.org).
 * Run `npm install` to install dependencies.
@@ -38,11 +29,11 @@ If you want to develop Min:
 * Start Min by running `node_modules/.bin/electron .`.<sup>1</sup>
 * After you make changes, you can press `ctrl+r` (or `cmd+r` on Mac) twice to restart the browser.
 
-<sup>1</sup>: _Make sure no `Min` instance is already running before starting the development version of `Min`._<br>
+<sup>1</sup>: _Make sure no `Little` instance is already running before starting the development version of `Little`._<br>
 
 ### Building binaries
 
-In order to build Min from source, follow the installation instructions above, then use one of the following commands to create binaries:
+In order to build Little from source, follow the installation instructions above, then use one of the following commands to create binaries:
 * ```npm run buildWindows```
 * ```npm run buildMac```
 * ```npm run buildDebian```
@@ -52,10 +43,6 @@ In order to build Min from source, follow the installation instructions above, t
 Depending on the platform you are building for, you may need to install additional dependencies:
 * If you are using macOS and building a package for Linux, install [Homebrew](http://brew.sh), then run `brew install fakeroot dpkg` first.
 * If you are using macOS or Linux and building a package for Windows, you will need to install [Mono](https://www.mono-project.com/) and [Wine](https://www.winehq.org/).
-
-## Contributing to Min
-
-Thanks for taking the time to contribute to Min! If you have any questions or run into any problems, please [open an issue](https://github.com/minbrowser/min/issues/new).
 
 ### Contributing Code
 
