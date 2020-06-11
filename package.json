@@ -1,0 +1,54 @@
+{
+  "name": "Little",
+  "productName": "Little",
+  "author": "PalmerAL",
+  "version": "0.1.0",
+  "description": "A fast, minimal browser that protects your privacy",
+  "electronVersion": "8.3.0",
+  "main": "main.build.js",
+  "dependencies": {
+    "dexie": "^1.2.0",
+    "dragula": "^3.6.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "mousetrap": "^1.5.3",
+    "pdfjs-dist": "2.2.228",
+    "regedit": "^3.0.3",
+    "string_score": "^0.1.22"
+  },
+  "devDependencies": {
+    "archiver": "^3.0.0",
+    "browserify": "^16.2.2",
+    "chokidar": "^2.0.4",
+    "decomment": "^0.9.0",
+    "electron": "^8.3.0",
+    "electron-installer-windows": "^1.1.1",
+    "electron-packager": "^14.0.4",
+    "electron-rebuild": "^1.11.0",
+    "electron-renderify": "0.0.2",
+    "standard": "^7.1.0"
+  },
+  "optionalDependencies": {
+    "electron-installer-redhat": "^2.0.0",
+    "electron-installer-debian": "^1.2.0"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node_modules/.bin/standard --verbose js/**/*.js main/*.js",
+    "watch": "node ./scripts/watch.js",
+    "buildMain": "node ./scripts/buildMain.js",
+    "buildBrowser": "node ./scripts/buildBrowser.js",
+    "buildPreload": "node ./scripts/buildPreload.js",
+    "build": "npm run buildMain && npm run buildBrowser && npm run buildPreload",
+    "buildWindows": "npm run build && node ./scripts/buildWindows.js",
+    "buildMac": "npm run build && node ./scripts/buildMac.js",
+    "buildDebian": "npm run build && node ./scripts/buildDebian.js",
+    "buildRaspi": "npm run build && node ./scripts/buildDebian.js --raspi",
+    "buildRedhat": "npm run build && node ./scripts/buildRedhat.js",
+    "buildAll": "npm run buildWindows && npm run buildMac && npm run buildDebian && npm run buildRedhat && npm run buildRaspi",
+    "updateFilters": "node ./ext/filterLists/updateEasylist.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minbrowser/min.git"
+  }
+}
