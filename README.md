@@ -44,10 +44,4 @@ Depending on the platform you are building for, you may need to install addition
 * If you are using macOS and building a package for Linux, install [Homebrew](http://brew.sh), then run `brew install fakeroot dpkg` first.
 * If you are using macOS or Linux and building a package for Windows, you will need to install [Mono](https://www.mono-project.com/) and [Wine](https://www.winehq.org/).
 
-### Contributing Code
-
-* Start by following the development instructions listed above.
-* The wiki has an [overview of Min's architecture](https://github.com/minbrowser/min/wiki/Architecture).
-* Min uses the [Standard](https://github.com/feross/standard) code style; [most editors](https://standardjs.com/#are-there-text-editor-plugins) have plugins available to auto-format your code.
-* If you see something that's missing, or run into any problems, please open an issue!
 
