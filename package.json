@@ -1,7 +1,7 @@
 {
   "name": "Little",
   "productName": "Little",
-  "author": "PalmerAL",
+  "author": "Placeholder Limited",
   "version": "0.1.0",
   "description": "A fast, minimal browser that protects your privacy",
   "electronVersion": "8.3.0",
@@ -49,6 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/minbrowser/min.git"
+    "url": "https://github.com/Olamide1/little.git"
   }
 }
