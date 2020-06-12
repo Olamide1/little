@@ -357,7 +357,7 @@ function buildAppMenu (options = {}) {
         {
           label: l('appMenuKeyboardShortcuts'),
           click: function () {
-            openTabInWindow('https://github.com/minbrowser/min/wiki#keyboard-shortcuts')
+            openTabInWindow('https://github.com/Olamide1/little/wiki#keyboard-shortcuts')
           }
         },
       /**   {

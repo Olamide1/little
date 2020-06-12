@@ -26,7 +26,7 @@ If you want to develop Little:
 * Run `npm install` to install dependencies.
 * Build the translation files and a copy of the JS by running `npm run build`.
   * You can also watch for changes and automatically rebuild by running `npm run watch`.
-* Start Min by running `node_modules/.bin/electron .`.<sup>1</sup>
+* Start Little by running `node_modules/.bin/electron .`.<sup>1</sup>
 * After you make changes, you can press `ctrl+r` (or `cmd+r` on Mac) twice to restart the browser.
 
 <sup>1</sup>: _Make sure no `Little` instance is already running before starting the development version of `Little`._<br>
