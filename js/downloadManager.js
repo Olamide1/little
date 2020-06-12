@@ -25,8 +25,8 @@ const downloadManager = {
   downloadBarElements: {},
   show: function () {
     if (!downloadManager.isShown) {
-      downloadManager.isShown = true
-      downloadManager.bar.hidden = false
+      downloadManager.isShown = false
+      downloadManager.bar.hidden = true
       webviews.adjustMargin([0, 0, downloadManager.height, 0])
     }
   },
