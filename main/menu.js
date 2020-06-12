@@ -201,7 +201,7 @@ function buildAppMenu (options = {}) {
         ...(process.platform !== 'darwin' ? [{type: 'separator'}] : []),
         ...(process.platform !== 'darwin' ? [{
           label: l('appMenuPreferences'),
-          accelerator: 'CmdOrCtrl+,',
+          accelerator: 'CmdOrCtrl+,',    
           click: function (item, window) {
             sendIPCToWindow(window, 'addTab', {
               url: 'file://' + __dirname + '/pages/settings/index.html'
@@ -369,7 +369,7 @@ function buildAppMenu (options = {}) {
         {
           label: l('appMenuTakeTour'),
           click: function () {
-            openTabInWindow('https://minbrowser.github.io/min/tour/')
+            openTabInWindow('https://olamide1.github.io/little-landing/tour/')
           }
         },
         
