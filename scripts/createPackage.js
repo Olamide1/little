@@ -24,7 +24,7 @@ const ignoredDirs = [
 ]
 
 var baseOptions = {
-  name: 'Min',
+  name: 'Little',
   dir: basedir,
   out: 'dist/app',
   electronVersion: electronVersion,
@@ -53,12 +53,12 @@ var platformOptions = {
     icon: 'icons/icon256.ico'
   },
   linux: {
-    name: 'min', // name must be lowercase to run correctly after installation
+    name: 'little', // name must be lowercase to run correctly after installation
     platform: 'linux',
     arch: 'x64'
   },
   raspi: {
-    name: 'min', // name must be lowercase to run correctly after installation
+    name: 'little', // name must be lowercase to run correctly after installation
     platform: 'linux',
     arch: 'armv7l',
     fpm: ['--architecture', 'armhf']
