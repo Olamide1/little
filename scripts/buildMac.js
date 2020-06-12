@@ -10,12 +10,12 @@ require('./createPackage.js')('darwin').then(function (appPaths) {
   /* create zip files */
   var packagePath = appPaths[0]
 
-  var output = fs.createWriteStream(packagePath.replace('Min-', 'Min-v' + version + '-') + '.zip')
+  var output = fs.createWriteStream(packagePath.replace('Little-', 'Little-v' + version + '-') + '.zip')
   var archive = archiver('zip', {
     zlib: { level: 9 }
   })
 
-  archive.directory(path.resolve(packagePath, 'Min.app'), 'Min.app')
+  archive.directory(path.resolve(packagePath, 'Little.app'), 'Little.app')
 
   archive.pipe(output)
   archive.finalize()
