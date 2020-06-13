@@ -13,7 +13,7 @@ function createPrompt (options, callback) {
     parent: parent != null ? parent : mainWindow,
     show: false,
     modal: true,
-    alwaysOnTop : true,
+    alwaysOnTop : false,
     title : options.title,
     autoHideMenuBar: true,
     frame: false,

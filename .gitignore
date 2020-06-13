@@ -2,6 +2,8 @@
 /.vscode
 .npm
 dist
+release-builds
 main.build.js
 .DS_Store
 package-lock.json
+releases
